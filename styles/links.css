@@ -1,0 +1,51 @@
+:root {
+  --black: #000;
+  --orange: #ffc629;
+  --grey: #bdbdbd;
+}
+
+.links-container,
+.links-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-top,
+.link-bottom {
+  display: flex;
+}
+
+.link-top {
+  margin-bottom: 0.8rem;
+}
+
+.links {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid var(--black);
+}
+
+.links:last-child {
+  border: none;
+}
+
+.links > a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.links > a:hover {
+  color: var(--orange);
+}
+
+.copyright {
+  color: var(--grey);
+}
+
+.copyright > p > span {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid var(--grey);
+}
