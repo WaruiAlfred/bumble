@@ -1,0 +1,77 @@
+:root {
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem; /*16px*/
+}
+
+.container {
+  padding: 0.8rem;
+}
+
+/* figure {
+  width: 60%;
+} */
+
+figure > img {
+  height: 80vh;
+  width: 55vw;
+}
+
+.ml {
+  margin-left: -10rem;
+}
+
+.mr {
+  margin-right: -10rem;
+}
+
+.how-it-starts,
+.why-we-do-it {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+  padding: 2rem 3rem;
+  width: 70rem;
+  z-index: 1;
+}
+
+.text-content > h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.youtube-video-container,
+footer {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.youtube-video-container > iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+footer {
+  margin-top: 3rem;
+}
