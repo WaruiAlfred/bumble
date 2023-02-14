@@ -15,6 +15,9 @@
 .link-top,
 .link-bottom {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .link-top {
@@ -22,6 +25,8 @@
 }
 
 .links {
+  height: min-content;
+  width: max-content;
   margin-right: 1rem;
   padding-right: 1rem;
   border-right: 1px solid var(--black);

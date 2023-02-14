@@ -18,12 +18,12 @@ body {
 }
 
 .container {
-  padding: 0.8rem;
+  padding: 2rem;
 }
 
-/* figure {
-  width: 60%;
-} */
+figure {
+  margin: 1rem 0;
+}
 
 figure > img {
   height: 80vh;
@@ -52,6 +52,7 @@ figure > img {
   background-color: var(--white);
   padding: 2rem 3rem;
   width: 70rem;
+  text-align: center;
   z-index: 1;
 }
 
@@ -61,17 +62,44 @@ figure > img {
   font-size: 4rem;
 }
 
-.youtube-video-container,
-footer {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .youtube-video-container > iframe {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  max-width: 100%;
 }
 
 footer {
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+
+  .text-content {
+    width: 70%;
+  }
+
+  figure > img {
+    width: 100vw;
+  }
+
+  .how-it-starts,
+  .why-we-do-it {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .how-it-starts {
+    flex-direction: column-reverse;
+  }
+
+  .ml {
+    margin-left: 0;
+  }
+
+  .mr {
+    margin-right: 0;
+  }
 }
